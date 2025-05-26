@@ -17,10 +17,20 @@ const CollectionCard: React.FC<CollectionCardProps> = ({
 
   return (
     <div
-      className={`flex items-end bg-cover bg-center p-4 h-full overflow-hidden rounded-lg ${ratioClasses}`}
+      className={`flex items-end bg-cover bg-center p-4 h-full overflow-hidden rounded-lg ${ratioClasses} 
+      group relative`}
       style={{ backgroundImage: `url(${collection.image_url})` }}
     >
-      <div>
+      <div
+        className="
+          absolute inset-0
+          bg-gradient-to-b from-black/10 to-black/60
+          opacity-40 group-hover:opacity-60
+          transition-opacity duration-200
+          pointer-events-none
+      "
+      />
+      <div className="relative z-10">
         <h3 className="text-white text-sm">{collection.name}</h3>
         <p className="text-white">{collection.description}</p>
       </div>
