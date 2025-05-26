@@ -32,8 +32,8 @@ const CollectionCard: React.FC<CollectionCardProps> = ({
             "
       />
       <div className="relative z-10">
-        <h3 className="text-white text-sm">{collection.name}</h3>
-        <p className="text-white">{collection.description}</p>
+        <h3 className="text-white text-sm font-thin">{collection.name}</h3>
+        <p className="text-white font-normal">{collection.description}</p>
       </div>
     </div>
   );
