@@ -19,7 +19,7 @@ const CollectionCard: React.FC<CollectionCardProps> = ({
     <div
       tabIndex={0}
       className={`flex items-end bg-cover bg-center p-4 h-full overflow-hidden rounded-lg ${ratioClasses} 
-      group relative focus:outline-none focus:ring-4 focus:ring-[#e9eafc]`}
+      group relative focus:outline-none focus-visible:ring-4 focus-visible:ring-[#e9eafc]`}
       style={{ backgroundImage: `url(${collection.image_url})` }}
     >
       <div
